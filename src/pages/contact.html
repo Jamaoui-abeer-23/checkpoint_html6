@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../output.css" rel="stylesheet">
+  <!-- Tailwind --> 
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <!-- font --> 
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap" rel="stylesheet">
+  <!-- icon --> 
+  <link rel="icon" href="/src/assets/icon.png" type="image/x-icon"/>
+
+
+</head>
+<body>
+    <!-- header --> 
+    <header class="flex items-center justify-between p-6 bg-[#16404D] text-[#FBF5DD]">
+        <h1 
+          class="text-2xl font-bold transition duration-300 hover:scale-110 hover:shadow-lg" 
+          style="font-family: 'DM Serif Text', serif;">
+          Jamaoui Abeer
+        </h1>
+        <button id="menu-toggle" class="block sm:hidden text-2xl focus:outline-none">
+          ☰
+        </button>
+        <nav id="menu" class="hidden sm:flex flex-col sm:flex-row gap-4">
+          <a href="#home" class="hover:text-[#DDA853] transition duration-300">Home</a>
+          <a href="#projects" class="hover:text-[#DDA853] transition duration-300">Projects</a>
+          <a href="#contact" class="hover:text-[#DDA853] transition duration-300">Contact</a>
+        </nav>
+      </header>
+
+      <!-- script for menu --> 
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+      
+        menuToggle.addEventListener('click', () => {
+          menu.classList.toggle('hidden');
+          menu.classList.toggle('flex');
+        });
+      </script>  
+    
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <!-- Tailwind --> 
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <!-- font --> 
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap" rel="stylesheet">
+
+  <!-- icon --> 
+  <link rel="icon" href="/src/assets/icon.png" type="image/x-icon"/>
+
+
+</head>
+<body>
+      <!-- header --> 
+      <header class="flex items-center justify-between p-6 bg-[#16404D] text-[#FBF5DD]">
+        <h1 
+          class="text-2xl font-bold transition duration-300 hover:scale-110 hover:shadow-lg" 
+          style="font-family: 'DM Serif Text', serif;">
+          Jamaoui Abeer
+        </h1>
+        <button id="menu-toggle" class="block sm:hidden text-2xl focus:outline-none">
+          ☰
+        </button>
+        <nav id="menu" class="hidden sm:flex flex-col sm:flex-row gap-4">
+          <a href="/src/index.html" class="hover:text-[#DDA853] transition duration-300">Home</a>
+          <a href="/src/pages/projects.html" class="hover:text-[#DDA853] transition duration-300">Projects</a>
+          <a href="/src/pages/contact.html" class="hover:text-[#DDA853] transition duration-300">Contact</a>
+        </nav>
+      </header>
+      <!-- hero --> 
+
+      <section class="relative bg-[#FBF5DD] py-32 sm:py-48 lg:py-64">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/src/assets/bg.png');"></div>
+        <div class="relative container mx-auto px-6 text-center">
+          <h2 class="text-5xl sm:text-6xl lg:text-7xl font-bold text-[#16404D] mb-4 drop-shadow-lg" 
+          style="font-family: 'DM Serif Text', serif;text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);">
+            Hello, I'm Jamaoui Abeer
+          </h2>
+          <p class="text-lg sm:text-xl text-[#16404D] mb-8">
+            A passionate web developer with a focus on creating beautiful and functional websites. Let's build something amazing together!
+          </p>
+          <a href="/src/pages/projects.html" class="px-6 py-3 bg-[#DDA853] text-[#16404D] font-semibold text-lg rounded-lg hover:bg-[#A6CDC6] transition duration-300">
+            Explore My Work
+          </a>
+        </div>
+      </section>
+      
+  <!-- skills -->
+       
+  <section id="skills" class="bg-[#FBF5DD] py-16">
+    <div class="container mx-auto px-6 lg:px-20">
+      <h2 
+        class="text-3xl font-bold text-[#16404D] text-center mb-10" 
+        style="font-family: 'DM Serif Text', serif; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+        My Skills
+      </h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
+        <!-- Skill Card -->
+        <div class="flex flex-col items-center bg-[#A6CDC6] p-6 rounded-lg shadow-lg hover:scale-105 transition duration-300">
+          <img src="/src/assets/html.png" alt="HTML" class="w-16 h-16 mb-4">
+          <span class="text-[#16404D] font-semibold text-lg mb-2">HTML</span>
+          <p class="text-[#16404D] text-center text-sm">
+            Building the structure of web pages with clean and semantic code.
+          </p>
+        </div>
+        <div class="flex flex-col items-center bg-[#A6CDC6] p-6 rounded-lg shadow-lg hover:scale-105 transition duration-300">
+          <img src="/src/assets/css.png" alt="CSS" class="w-16 h-16 mb-4">
+          <span class="text-[#16404D] font-semibold text-lg mb-2">CSS</span>
+          <p class="text-[#16404D] text-center text-sm">
+            Designing beautiful and responsive layouts for an engaging user experience.
+          </p>
+        </div>
+        <div class="flex flex-col items-center bg-[#A6CDC6] p-6 rounded-lg shadow-lg hover:scale-105 transition duration-300">
+          <img src="/src/assets/js.png" alt="JavaScript" class="w-16 h-16 mb-4">
+          <span class="text-[#16404D] font-semibold text-lg mb-2">JavaScript</span>
+          <p class="text-[#16404D] text-center text-sm">
+            Adding interactivity and dynamic behavior to web applications.
+          </p>
+        </div>
+        <div class="flex flex-col items-center bg-[#A6CDC6] p-6 rounded-lg shadow-lg hover:scale-105 transition duration-300">
+          <img src="/src/assets/c.png" alt="C" class="w-16 h-16 mb-4">
+          <span class="text-[#16404D] font-semibold text-lg mb-2">C</span>
+          <p class="text-[#16404D] text-center text-sm">
+            Writing efficient algorithms and solving problems with low-level programming.
+          </p>
+        </div>
+        <div class="flex flex-col items-center bg-[#A6CDC6] p-6 rounded-lg shadow-lg hover:scale-105 transition duration-300">
+          <img src="/src/assets/boot.png" alt="Bootstrap" class="w-16 h-16 mb-4">
+          <span class="text-[#16404D] font-semibold text-lg mb-2">Bootstrap</span>
+          <p class="text-[#16404D] text-center text-sm">
+            Creating responsive websites quickly with pre-built components.
+          </p>
+        </div>
+        <div class="flex flex-col items-center bg-[#A6CDC6] p-6 rounded-lg shadow-lg hover:scale-105 transition duration-300">
+          <img src="/src/assets/tail.png" alt="Tailwind CSS" class="w-16 h-16 mb-4">
+          <span class="text-[#16404D] font-semibold text-lg mb-2">Tailwind CSS</span>
+          <p class="text-[#16404D] text-center text-sm">
+            Building modern layouts efficiently with utility-first classes.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Project  -->
+  <section id="projects" class="bg-[#FBF9EE] py-16">
+    <div class="container mx-auto px-6 lg:px-20">
+      <h2 
+        class="text-3xl font-bold text-[#16404D] text-center mb-8" 
+        style="font-family: 'DM Serif Text', serif;text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+        My Projects
+      </h2>
+      <div class="text-center max-w-3xl mx-auto mb-8">
+        <p 
+          class="text-[#16404D] text-lg leading-relaxed" 
+          style="font-family: 'Poppins', serif;">
+          During my journey in web development, I have had the opportunity to work on a variety of exciting and challenging projects. Each project was a chance to dive deeper into different technologies, including HTML, CSS, JavaScript, and frameworks like Bootstrap and Tailwind CSS. These experiences not only helped me sharpen my technical skills but also allowed me to explore creative problem-solving, responsive design, and user-centric development. From crafting intuitive interfaces to building dynamic and interactive pages, every project reflects my dedication to producing clean, functional, and visually appealing work. I am proud to showcase these projects as milestones in my growth as a developer and as a testament to my passion for web design and innovation.
+        </p>
+      </div>
+      <div class="text-center">
+        <a 
+          href="/src/pages/projects.html" 
+          class="bg-[#DDA853] text-black px-6 py-3 rounded-lg shadow-lg text-lg font-semibold hover:bg-[#16404D] hover:shadow-xl transition duration-300"
+          style="font-family: 'Poppins', serif;">
+          Explore All Projects
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+  
+          <!-- script for menu --> 
+      <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+      
+        menuToggle.addEventListener('click', () => {
+          menu.classList.toggle('hidden');
+          menu.classList.toggle('flex');
+        });
+      </script>
+
+</body>
+</html>
