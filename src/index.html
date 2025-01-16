@@ -12,11 +12,19 @@
   <!-- icon --> 
   <link rel="icon" href="/src/assets/icon.png" type="image/x-icon"/>
 
+  <!-- Bootstrap CSS -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
 
 </head>
 <body>
       <!-- header --> 
-      <header class="flex items-center justify-between p-6 bg-[#16404D] text-[#FBF5DD]">
+      <header class="flex items-center justify-between p-6 bg-[#16404D] text-[#FBF5DD] ;">
         <h1 
           class="text-2xl font-bold transition duration-300 hover:scale-110 hover:shadow-lg" 
           style="font-family: 'DM Serif Text', serif;">
@@ -26,7 +34,7 @@
           ☰
         </button>
         <nav id="menu" class="hidden sm:flex flex-col sm:flex-row gap-4">
-          <a href="/src/index.html" class="hover:text-[#DDA853] transition duration-300">Home</a>
+          <a href="/src/index.html" class="hover:text-[#DDA853] transition duration-300 ">Home</a>
           <a href="/src/pages/projects.html" class="hover:text-[#DDA853] transition duration-300">Projects</a>
           <a href="/src/pages/contact.html" class="hover:text-[#DDA853] transition duration-300">Contact</a>
         </nav>
@@ -131,7 +139,45 @@
     </div>
   </section>
   
+      <!-- footer -->
+
+  <footer class="footer bg-light py-4 flex items-center justify-between p-6 bg-[#16404D] text-[#FBF5DD] ;">
+    <div class="container text-center text-md-left">
+      <div class="row">
+        <!-- About Section -->
+        <div class="col-md-6 mb-3">
+          <h5 class="text-uppercase" style="color: #A35C7A;">My portfolio</h5>
+          <p style="color: #212121;">
+            Crafted with passion and precision by Abeer Jamaoui.
+          </p>
+        </div>
   
+        <!-- Social Media Links -->
+        <div class="col-md-6 text-md-right">
+          <h5 class="text-uppercase" style="color: #A35C7A;">Follow Me</h5>
+          <a href="https://www.facebook.com/jamaoui.abeer?mibextid=ZbWKwL" class="text-decoration-none mx-2" style="color: #C890A7;">
+            <i class="fab fa-facebook fa-lg"></i>
+          </a>
+          <a href="https://github.com/Jamaoui-abeer-23" class="text-decoration-none mx-2" style="color: #C890A7;">
+            <i class="fab fa-github fa-lg"></i>
+          </a>
+          <a href="#" class="text-decoration-none mx-2" style="color: #C890A7;">
+            <i class="fab fa-instagram fa-lg"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/abeer-jamaoui-7025a8232/"  class="text-decoration-none mx-2" style="color: #C890A7;">
+            <i class="fab fa-linkedin fa-lg"></i>
+          </a>
+        </div>
+      </div>
+  
+      <!-- Copyright -->
+      <div class="text-center mt-3">
+        <p class="mb-0" style="color: #9e8585;">&copy; 2025 Travel Agency. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <!-- Bootstrap and JS dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   
   
           <!-- script for menu --> 
