@@ -12,19 +12,13 @@
   <!-- icon --> 
   <link rel="icon" href="/src/assets/icon.png" type="image/x-icon"/>
 
-  <!-- Bootstrap CSS -->
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
   
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
 
 </head>
 <body>
       <!-- header --> 
-      <header class="flex items-center justify-between p-6 bg-[#16404D] text-[#FBF5DD] ;">
+      <header class="flex items-center justify-between p-6 bg-[#16404D] text-[#FBF5DD]">
         <h1 
           class="text-2xl font-bold transition duration-300 hover:scale-110 hover:shadow-lg" 
           style="font-family: 'DM Serif Text', serif;">
@@ -114,11 +108,12 @@
     </div>
   </section>
   <!-- Project  -->
-  <section id="projects" class="bg-[#FBF9EE] py-16">
-    <div class="container mx-auto px-6 lg:px-20">
+  <section id="projects" class="bg-[#FBF5DD] py-16">
+    <div class="container mx-auto px-6 lg:px-20 bg-white shadow-lg rounded-lg p-10 transform transition-transform duration-300 hover:scale-105"
+    style="box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);  padding-bottom: 20px;">
       <h2 
         class="text-3xl font-bold text-[#16404D] text-center mb-8" 
-        style="font-family: 'DM Serif Text', serif;text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+        style="font-family: 'DM Serif Text', serif;text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); padding-top: 20px;">
         My Projects
       </h2>
       <div class="text-center max-w-3xl mx-auto mb-8">
@@ -129,19 +124,73 @@
         </p>
       </div>
       <div class="text-center">
-        <a 
-          href="/src/pages/projects.html" 
-          class="bg-[#DDA853] text-black px-6 py-3 rounded-lg shadow-lg text-lg font-semibold hover:bg-[#16404D] hover:shadow-xl transition duration-300"
-          style="font-family: 'Poppins', serif;">
-          Explore All Projects
-        </a>
+        <a href="/src/pages/projects.html" 
+        class="px-6 py-3 bg-[#DDA853] text-[#16404D] font-semibold text-lg rounded-lg hover:bg-[#A6CDC6] transition duration-300">
+            Explore My Work
+          </a>
       </div>
     </div>
-  </section>
+  </section> 
+    <!-- contact -->
+    <section id="contact" class="bg-[#FBF5DD] py-16">
+        <div 
+          class="container mx-auto px-6 lg:px-20 bg-white shadow-lg rounded-lg p-10 transform transition-transform duration-300 hover:scale-105"
+          style="box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);  padding-bottom: 20px;">
+          <!-- Title Section -->
+          <div class="text-center mb-12">
+            <h2 class="text-4xl font-bold text-[#16404D] mb-4" style="font-family: 'DM Serif Text', serif; padding: 20px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+              Contact Me
+            </h2>
+            <p class="text-lg text-[#16404D]" style="font-family: 'Poppins', sans-serif; padding-bottom: 40px;">
+              I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. 
+              Feel free to reach out via any of the channels below!
+            </p>
+          </div>
+          
+          <!-- Contact Columns -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center ">
+            <!-- Social Media -->
+            <div>
+              <h3 class="text-xl font-semibold text-[#DDA853] mb-4" style="font-family: 'DM Serif Text', serif;">Social Media</h3>
+              <div class="space-y-2">
+                <a href="https://github.com/Jamaoui-abeer-23"
+                     class="text-decoration-none mx-2 text-[#16404D] hover:text-[#DDA853] justify-center" >
+                    <i class="fab fa-github fa-lg"></i>
+                  </a>
+                <a href="https://www.linkedin.com/in/abeer-jamaoui-7025a8232/" 
+                     class="text-decoration-none mx-2 text-[#16404D] hover:text-[#DDA853] justify-center">
+                    <i class="fab fa-linkedin fa-lg"></i>
+                  </a>
+              </div>
+            </div>
+            
+            <!-- Gmail -->
+            <div>
+              <h3 class="text-xl font-semibold text-[#DDA853] mb-4" style="font-family: 'DM Serif Text', serif;">Email</h3>
+              <p class="text-[#16404D]" style="font-family: 'Poppins', sans-serif;">jamaoui.abeer@gmail.com</p>
+            </div>
+            
+            <!-- Address -->
+            <div>
+              <h3 class="text-xl font-semibold text-[#DDA853] mb-4" style="font-family: 'DM Serif Text', serif;">Address</h3>
+              <p class="text-[#16404D]" style="font-family: 'Poppins', sans-serif;">
+                Kairouan, Tunisia
+              </p>
+            </div>
+            
+            <!-- Phone Number -->
+            <div>
+              <h3 class="text-xl font-semibold text-[#DDA853] mb-4" style="font-family: 'DM Serif Text', serif;">Phone</h3>
+              <p class="text-[#16404D]" style="font-family: 'Poppins', sans-serif;">+216 55 502 511</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
   
       <!-- footer -->
 
-  <footer class="footer bg-light py-4 flex items-center justify-between p-6 bg-[#16404D] text-[#FBF5DD] ;">
+  <footer class="footer bg-light py-4 flex items-center justify-between p-6 bg-[#FBF5DD] text-[#FBF5DD] ;">
     <div class="container text-center text-md-left">
       <div class="row">
         <!-- About Section -->
@@ -155,15 +204,11 @@
         <!-- Social Media Links -->
         <div class="col-md-6 text-md-right">
           <h5 class="text-uppercase" style="color: #A35C7A;">Follow Me</h5>
-          <a href="https://www.facebook.com/jamaoui.abeer?mibextid=ZbWKwL" class="text-decoration-none mx-2" style="color: #C890A7;">
-            <i class="fab fa-facebook fa-lg"></i>
-          </a>
+          
           <a href="https://github.com/Jamaoui-abeer-23" class="text-decoration-none mx-2" style="color: #C890A7;">
             <i class="fab fa-github fa-lg"></i>
           </a>
-          <a href="#" class="text-decoration-none mx-2" style="color: #C890A7;">
-            <i class="fab fa-instagram fa-lg"></i>
-          </a>
+          
           <a href="https://www.linkedin.com/in/abeer-jamaoui-7025a8232/"  class="text-decoration-none mx-2" style="color: #C890A7;">
             <i class="fab fa-linkedin fa-lg"></i>
           </a>
@@ -172,12 +217,11 @@
   
       <!-- Copyright -->
       <div class="text-center mt-3">
-        <p class="mb-0" style="color: #9e8585;">&copy; 2025 Travel Agency. All rights reserved.</p>
+        <p class="mb-0" style="color: #9e8585;">&copy; 2025 My portfolio. All rights reserved.</p>
       </div>
     </div>
   </footer>
-  <!-- Bootstrap and JS dependencies -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  
   
   
           <!-- script for menu --> 
