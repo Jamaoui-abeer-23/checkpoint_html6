@@ -15,7 +15,7 @@
 </head>
 <body>
     <!-- header --> 
-    <header class="flex items-center justify-between p-6 bg-[#16404D] text-[#FBF5DD]">
+    <header class="fixed z-auto w-full flex items-center justify-between p-6 bg-[#16404D] text-[#FBF5DD] ">
         <h1 
           class="text-2xl font-bold transition duration-300 hover:scale-110 hover:shadow-lg" 
           style="font-family: 'DM Serif Text', serif;">
@@ -30,14 +30,20 @@
           <a href="/src/pages/contact.html" class="hover:text-[#DDA853] transition duration-300">Contact</a>
         </nav>
       </header>
-      
-      <section id="projects" class="bg-[#FBF9EE] py-16">
-        <div class="container mx-auto px-6 lg:px-20">
+
+       <!-- Project -->
+      <section id="projects" class="bg-[#FBF9EE] py-16 ">
+        
           <h2 
             class="text-3xl font-bold text-[#16404D] text-center mb-10" 
-            style="font-family: 'DM Serif Text', serif; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+            style="font-family: 'DM Serif Text', serif; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); padding-top: 50px;">
             My Projects
           </h2>
+          <div class="container mx-auto px-6 lg:px-20 flex justify-center p-6" >
+            <div class="intro-logo w-40 h-40 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 rounded-lg overflow-hidden">
+              <img src="/src/assets/soft.png" alt="software" class="w-100 h-100 object-cover">
+            </div>
+          </div>
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
             <!-- Project Card -->
             <div class="bg-[#FBF5DD] p-6 rounded-lg shadow-lg hover:scale-105 transition duration-300 w-full h-[450px]">
@@ -119,7 +125,54 @@
         </div>
       </section>
       
+      
+      <!-- Footer -->
 
+
+      <footer class="py-8" style="background: linear-gradient(to right, #FBF5DD, #A6CDC6);">
+        
+        <div class="container mx-auto px-6 lg:px-20">
+          <div class="flex flex-row justify-between items-center md:gap-10">
+            <!-- About Section -->
+            <div class="mb-6 md:mb-0 md:text-left">
+              <h5 class="text-2xl font-bold text-black" style="font-family: 'DM Serif Text', serif;">
+                My Portfolio
+              </h5>
+              <p class="text-black mt-2" style="font-family: 'Poppins', sans-serif;">
+                Crafted with passion and precision by Abeer Jamaoui.
+              </p>
+            </div>
+            
+            <!-- Social Media Links -->
+            <div class="flex space-x-6">
+              <a 
+                href="https://github.com/Jamaoui-abeer-23" 
+                target="_blank" 
+                class="text-white hover:text-[#DDA853] transition duration-300"
+                aria-label="GitHub"
+              >
+                <i class="fab fa-github fa-2x"></i>
+              </a>
+              <a 
+                href="https://www.linkedin.com/in/abeer-jamaoui-7025a8232/" 
+                target="_blank" 
+                class="text-white hover:text-[#DDA853] transition duration-300"
+                aria-label="LinkedIn"
+              >
+                <i class="fab fa-linkedin fa-2x"></i>
+              </a>
+            </div>
+          </div>
+          <hr>
+          <!-- Copyright -->
+          <div class="text-center mt-8">
+            <p class="text-gray-200" style="font-family: 'Poppins', sans-serif;">
+              &copy; 2025 My Portfolio. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
+      
     <!-- script for menu --> 
     <script>
         const menuToggle = document.getElementById('menu-toggle');
