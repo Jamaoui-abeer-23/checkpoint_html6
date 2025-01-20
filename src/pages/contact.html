@@ -106,10 +106,13 @@
             <p>By selecting this, you agree to our <a href="#" class="font-semibold text-indigo-600">privacy&nbsp;policy</a>.</p>
           </label>
         </div>
-        <div class="mt-6">
-          <button type="submit" class="w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-indigo-600">
-            Let's Talk
+        <div class="text-center mt-8">
+          <button 
+            id="openModalButton" 
+            class="px-6 py-3 bg-indigo-600 text-white text-sm font-medium rounded-full shadow-md hover:bg-indigo-500 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2 transition-transform transform hover:scale-105">
+          Lets talk
           </button>
+        </div>
         </div>
       </form>
     </div>
@@ -120,7 +123,7 @@
       </div>
       
       <!-- Modal -->
-<div id="modal" class="fixed inset-0 z-50 hidden bg-black bg-opacity-50 flex items-center justify-center">
+<div id="modal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
   <div class="bg-[#FBF5DD] rounded-xl shadow-2xl w-[24rem] sm:w-[28rem] p-8 relative transform transition-all">
     
 
@@ -210,24 +213,38 @@
       </script>  
     <!-- JavaScript to Toggle Modal -->
 <script>
+  document.addEventListener('DOMContentLoaded', () => {
   const modal = document.getElementById('modal');
   const openModalButton = document.getElementById('openModalButton');
   const closeModalButton = document.getElementById('closeModalButton');
 
+  // Open modal
   openModalButton.addEventListener('click', () => {
+    console.log("Modal opened");
     modal.classList.remove('hidden');
   });
 
+  // Close modal
   closeModalButton.addEventListener('click', () => {
+    console.log("Close button clicked");
     modal.classList.add('hidden');
   });
 
-  // Close the modal when clicking outside the modal content
+  // Close modal when clicking outside of it
   window.addEventListener('click', (event) => {
+    console.log("Window clicked", event.target);
     if (event.target === modal) {
+      console.log("Modal background clicked");
       modal.classList.add('hidden');
     }
   });
+});
+openModalButton.addEventListener('click', () => {
+  modal.classList.remove('hidden');
+  setTimeout(() => {
+    console.log("Modal is still open...");
+  }, 2000);
+});
 </script>
 </body>
 </html>
